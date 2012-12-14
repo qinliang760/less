@@ -1,0 +1,74 @@
+/*-------- Color ----------*/
+
+
+/* Grays 灰度色*/
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+
+/* Accent colors 彩色 */
+
+@blue:                  #049cdb;
+@blueDark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+/* Font 文字大小 */
+
+@font12:12px;
+@font14:14px;
+@font16:16px;
+
+
+/* Font 样式 */
+@fontNormal:normal;
+@fontWeight:bold;
+@fontUnderline:underline;
+
+/* Font 字体 */
+@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+
+/* Link 链接 */
+a {
+	color:#6d6d6d;	
+	text-decoration:none;
+	outline:none;
+}
+a:link {
+	color:#6d6d6d;
+}
+a:visited {
+	color:#6d6d6d;
+}
+a:hover {
+	/*color:#fff;*/
+	text-decoration:underline;
+}
+a:active {
+	color:#fff;
+}
+a{
+	color:#6d6d6d;
+	&:link{color:#6d6d6d;}
+	&:visited{color:#6d6d6d;}
+	&:hover{}
+	&:active{color:#fff;}
+}
+
+@px:"px";
+.pad(@u:0){
+	padding:~"@{u}"+~"@{px}";
+}
+
+
+
